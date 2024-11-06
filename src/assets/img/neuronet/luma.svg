@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1095" height="1095" viewBox="0 0 1095 1095" fill="none">
+<circle cx="547.5" cy="547.5" r="547.5" fill="black"/>
+<path d="M301 405.023L547.144 263V831.181L301 689.127V405.023Z" fill="black"/>
+<path d="M547.144 831.181L301 689.127L547.144 547.075L793.288 689.127L547.144 831.181Z" fill="url(#paint0_linear_1922_1619)"/>
+<path d="M547.144 831.181L301 689.127L547.144 547.075L793.288 689.127L547.144 831.181Z" fill="url(#paint1_linear_1922_1619)"/>
+<path style="mix-blend-mode:screen" d="M301 405.023L547.144 263V831.181L301 689.127V405.023Z" fill="url(#paint2_linear_1922_1619)"/>
+<path style="mix-blend-mode:overlay" d="M547.144 831.181L301 689.127L547.144 547.075L793.288 689.127L547.144 831.181Z" fill="url(#paint3_linear_1922_1619)"/>
+<path style="mix-blend-mode:overlay" d="M301 405.023L547.144 263V831.181L301 689.127V405.023Z" fill="url(#paint4_linear_1922_1619)"/>
+<defs>
+<linearGradient id="paint0_linear_1922_1619" x1="301" y1="689.127" x2="793.288" y2="689.127" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0000AA"/>
+<stop offset="1" stop-color="#A78DFF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1922_1619" x1="301" y1="689.127" x2="793.288" y2="689.127" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0000AA"/>
+<stop offset="1" stop-color="#A78DFF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1922_1619" x1="579.244" y1="799.034" x2="364.457" y2="351.576" gradientUnits="userSpaceOnUse">
+<stop stop-color="#004EFF"/>
+<stop offset="1" stop-color="#00FFFF"/>
+</linearGradient>
+<linearGradient id="paint3_linear_1922_1619" x1="301" y1="689.127" x2="793.288" y2="689.127" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0000AA"/>
+<stop offset="1" stop-color="#A78DFF"/>
+</linearGradient>
+<linearGradient id="paint4_linear_1922_1619" x1="579.244" y1="799.034" x2="364.457" y2="351.576" gradientUnits="userSpaceOnUse">
+<stop stop-color="#004EFF"/>
+<stop offset="1" stop-color="#00FFFF"/>
+</linearGradient>
+</defs>
+<script xmlns=""/></svg>

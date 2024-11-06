@@ -1,21 +1,49 @@
 /* fonts */
+@font-face {
+    font-family: MyFont;
+    src: url("../fonts/Normal.woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url("../fonts/Banner.woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url("../fonts/Bold.woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url("../fonts/VeryBold.woff2");
+    font-weight: 700;
+}
 
 /* CSS reset */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: ; */
+    font-family: MyFont;
+    font-weight: 500;
 }
 
 /* Global */
 
 :root{
     /* Colors */
-    --coloreViolet: #715de2;
-    --coloreVioletGradient: linear-gradient(to right, rgb(205, 132, 241), rgb(113, 88, 226) 50%);
+    --colorWhite: rgb(255, 255, 255);
+    --colorViolet: #715de2;
+    --colorVioletLite: rgb(178, 129, 254);
+    --colorBlack: rgb(16, 16, 16);
+    --colorForBox: #191919;
+    --colorVioletGradient: linear-gradient(90deg, rgba(178,129,254, 1) 0%, rgba(113,93,226,1) 100%);
     /* Fonts */
-
+    --sizeLink: 18px;
     /* Borders */
 
     /* Shadows */
@@ -23,15 +51,202 @@
 
 body{
     overflow-x: hidden;
+    background-color: var(--colorBlack);
 }
 
 .section{
     width: 100%;
-    padding: 100px 0;
+    padding: 100px 0px;
 }
 
 .container{
     width: 100%;
     padding: 0 10%;
 }
+
+.link{
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.link:hover{
+    color: var(--colorVioletLite);
+    transition: all .2s linear;
+}
+
+.violet{
+    color: var(--colorViolet);
+}
+
+.violet-lite{
+    color: var(--colorVioletLite);
+}
+
+h1, h2, h3, h4, p, span, div, a{
+    color: var(--colorWhite);
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid var(--colorViolet);
+    cursor: pointer;
+}
+
+.btn:hover{
+    /* background: var(--colorVioletGradient); */
+    /* transition: .2s linear; */
+
+}
+
+/* header */
+.header__section{
+    padding: 0;
+    padding-top: 30px;
+}
+
+.header__container{
+    position: fixed;
+    
+}
+
+.header__container_block{
+    border-top: 1px solid var(--colorViolet); 
+    border-radius: 100px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(5px);
+}
+
+.header__container_block > nav {
+    display: flex;
+    gap: 60px;
+}
+
+.header__logo{
+    width: 47px;
+    height: 45px;
+}
+
+.logo_wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    user-select: none;
+}
+
+
+/* banner */
+.TopGlowForBanner{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url('../img/TopGlow.webp');
+    top: -200px;
+    pointer-events: none;
+}
+
+.banner__section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+}
+
+.banner__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_text{
+    font-size: 24px;
+    color: grey;
+    margin-top: 10px;
+}
+
+.banner__wrap-neuronet{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 1rem;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-neuronet_box{
+    background-color: var(--colorForBox);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 14px;
+}
+
+.wrap-neuronet_box img{
+    width: 37px;
+    width: 37px;
+}
+
+/* opportunities */
+.opportunities__container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(16, minmax(0, 6.25rem));
+    grid-template-rows: repeat(17, minmax(0, 4rem));
+}
+
+.opportunities_box{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorForBox);
+    border-radius: 30px;
+    padding: 24px;
+}
+
+.opportunities_box--1{
+    grid-area: 1 / 1 / 7 / 6;
+}
+
+.opportunities_box--2{
+    grid-area: 7 / 1 / 11 / 6;
+}
+
+.opportunities_box--3{
+    grid-area: 1 / 6 / 11 / 13;
+}
+
+.opportunities_box--4{
+    grid-area: 1 / 13 / 8 / 17;
+}
+
+.opportunities_box--5{
+    grid-area: 8 / 13 / 11 / 17;
+}
+
+.opportunities_box--6{
+    grid-area: 11 / 1 / 16 / 7;
+}
+
+.opportunities_box--7{
+    grid-area: 11 / 7 / 16 / 17;;
+}
+
 

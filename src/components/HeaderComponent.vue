@@ -1,15 +1,19 @@
 <template>
-    <header class="section">
-        <div class="container">
-            <img src="" alt="">
-            <nav>
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-            </nav>
-
-            <div>123</div>
+    <header class="section header__section">
+        <div class="container header__container">
+            <div class="header__container_block">
+                <div class="logo_wrap">
+                    <img class="header__logo" src="../assets/img/icons/lg.svg" alt="logo">
+                    <span>Duck <br> Company</span>
+                </div>
+                <nav>
+                    <a class="link" href="#">Нейросети</a>
+                    <a class="link" href="#">Возможности</a>
+                    <a class="link" href="#">Цены</a>
+                    <a class="link" href="#">FAQ</a>
+                </nav>
+                <div class="btn">Попробовать</div>
+            </div>
         </div>
     </header>
 </template>
@@ -22,5 +26,7 @@
 </script>
 
 <style scoped>
-
+    .header__container{
+        z-index: 100;
+    }
 </style>
