@@ -43,6 +43,7 @@
     --colorBlack: rgb(16, 16, 16);
     --colorForBox: #191919;
     --colorVioletGradientLeftRight: linear-gradient(90deg, rgba(178,129,254, 1) 0%, rgba(113,93,226,1) 100%);
+    --colorVioletGradientRightLeft: linear-gradient(90deg, #6f5bf0 0%, rgba(178,129,254, 1) 100%);
     --colorVioletLightGradientLeftRight: linear-gradient(145deg, #ffa7a7, #a30cb5, #00173a);
     --colorPinkGradientTopBottom: linear-gradient(0deg, #f99ca8, #e276ab 56.52%, #c94daf);
     --colorVioletGradientTopBottom: linear-gradient(180deg, rgba(25,25,25,1) 40%, rgba(81,64,177, 0.3) 100%);
@@ -148,6 +149,7 @@ h4{
     border-radius: 50px;
     border: 2px solid var(--colorViolet);
     cursor: pointer;
+    width: fit-content;
 }
 
 .btn:hover{
@@ -468,11 +470,45 @@ h4{
 
 /* using */
 .using__container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* gap: 60px; */
     padding: 0 15%;
+}
+
+.using__wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.using__wrap_btn{
+    padding: 14px 100px;
+    /* padding-left: 140px; */
+    font-size: 22px;
+    border: 1px solid var(--colorVioletDarck);
+    transition: all .6s linear;
+    position: relative;
+}
+
+.using__wrap_btn::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 56px;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-image: url('../img/neuronet/chatGPT-3_5.svg');
+}
+
+.using__wrap_btn:hover{
+    background: var(--colorVioletGradientRightLeft);
 }
 
 .using__img{
@@ -480,11 +516,9 @@ h4{
     mix-blend-mode: lighten;
     position: relative;
     pointer-events: none;
-    width: 600px;
-    height: 575px;
+    width: 400px;
     transform: scale(.80);
     object-fit: cover;
-
 }
 
 .using__img::after{

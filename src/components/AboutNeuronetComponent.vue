@@ -34,88 +34,172 @@
             <div class="opportunities_box opportunities_box--2">
                 <h3>Лучшие<span class="violet-lite"> сервисы</span></h3>
                 <div class="items-wrap">
-                    <div class="items marquee">
-                    <div class="item wrap-neuronet_box">
+                    <div class="items marquee tab">
+                    <input checked id="tab-btn-1" name="tab-btn" type="radio">
+                    <label for="tab-btn-1" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
                         <span>ChatGPT</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
+                    </label>
+                    <input id="tab-btn-2" name="tab-btn" type="radio">
+                    <label for="tab-btn-2" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/midjourney.svg" alt="img">
                         <span>Midjourney</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
+                    </label>
+                    <input id="tab-btn-3" name="tab-btn" type="radio">
+                    <label for="tab-btn-3" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/chatGPT-dalle.svg" alt="img">
                         <span>Dall-E</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
+                    </label>
+                    <input id="tab-btn-4" name="tab-btn" type="radio">
+                    <label for="tab-btn-4" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/eleven.svg" alt="img">
                         <span>Eleven Labs</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
+                    </label>
+                    <input id="tab-btn-5" name="tab-btn" type="radio">
+                    <label for="tab-btn-5" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/luma.svg" alt="img">
                         <span>Luma</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
+                    </label>
+                    <input id="tab-btn-6" name="tab-btn" type="radio">
+                    <label for="tab-btn-6" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/runwayml.svg" alt="img">
                         <span>Runway ML</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
+                    </label>
+                    <input id="tab-btn-7" name="tab-btn" type="radio">
+                    <label for="tab-btn-7" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/stable-diffusion.svg" alt="img">
                         <span>Stable Diffusion</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
+                    </label>
+                    <input id="tab-btn-8" name="tab-btn" type="radio">
+                    <label for="tab-btn-8" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/stability.svg" alt="img">
                         <span>Stability</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
+                    </label>
+                    <input id="tab-btn-9" name="tab-btn" type="radio">
+                    <label for="tab-btn-9" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/claude-ai.svg" alt="img">
                         <span>Claudy AI</span>
-                    </div>
+                    </label>
 
                     </div>
-                    <div aria-hidden="true" class="items marquee">
-                    <div class="item wrap-neuronet_box">
+                    <div aria-hidden="true" class="items marquee tab">
+                    <input id="tab-btn-1" name="tab-btn" type="radio">
+                    <label for="tab-btn-1" class="item wrap-neuronet_box">
                         <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
                         <span>ChatGPT</span>
+                    </label>
+                    <input id="tab-btn-2" name="tab-btn" type="radio">
+                    <label for="tab-btn-2" class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/midjourney.svg" alt="img">
+                        <span>Midjourney</span>
+                    </label>
+                    <input id="tab-btn-3" name="tab-btn" type="radio">
+                    <label for="tab-btn-3" class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/chatGPT-dalle.svg" alt="img">
+                        <span>Dall-E</span>
+                    </label>
+                    <input id="tab-btn-4" name="tab-btn" type="radio">
+                    <label for="tab-btn-4" class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/eleven.svg" alt="img">
+                        <span>Eleven Labs</span>
+                    </label>
+                    <input id="tab-btn-5" name="tab-btn" type="radio">
+                    <label for="tab-btn-5" class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/luma.svg" alt="img">
+                        <span>Luma</span>
+                    </label>
+                    <input id="tab-btn-6" name="tab-btn" type="radio">
+                    <label for="tab-btn-6" class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/runwayml.svg" alt="img">
+                        <span>Runway ML</span>
+                    </label>
+                    <input id="tab-btn-7" name="tab-btn" type="radio">
+                    <label for="tab-btn-7" class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/stable-diffusion.svg" alt="img">
+                        <span>Stable Diffusion</span>
+                    </label>
+                    <input id="tab-btn-8" name="tab-btn" type="radio">
+                    <label for="tab-btn-8" class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/stability.svg" alt="img">
+                        <span>Stability</span>
+                    </label>
+                    <input id="tab-btn-9" name="tab-btn" type="radio">
+                    <label for="tab-btn-9" class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/claude-ai.svg" alt="img">
+                        <span>Claudy AI</span>
+                    </label>
                     </div>
-                    <div class="item wrap-neuronet_box">
+                </div>
+
+                <!-- tab-contant -->
+                <div class="opportunities_box--2_description tab-content content-1" id="content-1">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
                         <img src="../assets/img/neuronet/midjourney.svg" alt="img">
                         <span>Midjourney</span>
                     </div>
-                    <div class="item wrap-neuronet_box">
-                        <img src="../assets/img/neuronet/chatGPT-dalle.svg" alt="img">
-                        <span>Dall-E</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
-                        <img src="../assets/img/neuronet/eleven.svg" alt="img">
-                        <span>Eleven Labs</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
-                        <img src="../assets/img/neuronet/luma.svg" alt="img">
-                        <span>Luma</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
-                        <img src="../assets/img/neuronet/runwayml.svg" alt="img">
-                        <span>Runway ML</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
-                        <img src="../assets/img/neuronet/stable-diffusion.svg" alt="img">
-                        <span>Stable Diffusion</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
-                        <img src="../assets/img/neuronet/stability.svg" alt="img">
-                        <span>Stability</span>
-                    </div>
-                    <div class="item wrap-neuronet_box">
-                        <img src="../assets/img/neuronet/claude-ai.svg" alt="img">
-                        <span>Claudy AI</span>
-                    </div>
-                    </div>
+                    <p><span class="gadient-pink">Midjourney</span>  - нейросеть для создания изображений под ваше описание.</p>
                 </div>
-                <div class="opportunities_box--2_description">
+
+                <div class="opportunities_box--2_description tab-content" id="content-2">
                     <div class="wrap-neuronet_box wrap-neuronet_box--description">
                         <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
                         <span>ChatGPT</span>
+                    </div>
+                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                </div>
+
+                <div class="opportunities_box--2_description tab-content" id="content-3">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT23</span>
+                    </div>
+                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                </div>
+
+                <div class="opportunities_box--2_description tab-content" id="content-4">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT234234234</span>
+                    </div>
+                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                </div>
+
+                <div class="opportunities_box--2_description tab-content" id="content-5">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT23qweqwe34234</span>
+                    </div>
+                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                </div>
+
+                <div class="opportunities_box--2_description tab-content" id="content-6">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT234234234</span>
+                    </div>
+                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                </div>
+
+                <div class="opportunities_box--2_description tab-content" id="content-7">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT234ndngn34</span>
+                    </div>
+                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                </div>
+
+                <div class="opportunities_box--2_description tab-content" id="content-8">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT234ndngn34</span>
+                    </div>
+                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                </div>
+
+                <div class="opportunities_box--2_description tab-content" id="content-9">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT234ndngn34</span>
                     </div>
                     <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
                 </div>
@@ -171,7 +255,7 @@
         overflow: hidden;
         user-select: none;
         gap: 20px;
-        width: 400px;
+        width: 100%;
     }
 
     .items {
@@ -213,7 +297,6 @@
     .opportunities_box--2_description{
         display: flex;
         flex-direction: column;
-        /* align-items: ce; */
     }
 
     .wrap-neuronet_box--description {
@@ -221,4 +304,41 @@
         padding: 0;
         margin-bottom: 10px;
     }
+
+    /* tab */
+
+    .tab > input[type="radio"] {
+        display: none;
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    /* #tab-btn-1:checked + .content-1{
+        display: flex !important
+    } */
+
+    /* Я не понимаю почему этот код не работает */
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2,
+    #tab-btn-3:checked~#content-3,
+    #tab-btn-4:checked~#content-4,
+    #tab-btn-5:checked~#content-5,
+    #tab-btn-6:checked~#content-6,
+    #tab-btn-7:checked~#content-7,
+    #tab-btn-8:checked~#content-8,
+    #tab-btn-9:checked~#content-9 {
+        display: flex;
+    }
+
+    .tab > input[type="radio"]:checked + label {
+        background: red;
+    }
+
+    .tab > input[type="radio"] + label {
+        cursor: pointer;
+    }
+
+
 </style>

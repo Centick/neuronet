@@ -17,7 +17,10 @@
     <!--  -->
     <div class="section">
         <div class="container using__container">
-            <QweComponent/>
+            <div class="using__wrap">
+                <QweComponent/>
+                <div class="btn using__wrap_btn" type="button">Попробовать пямо сейчас</div>
+            </div>
             <img class="using__img" src="../assets/img/soundLine.gif" alt="img">
         </div>
     </div>
