@@ -31,7 +31,99 @@
             </div>
 
             <!-- 2 секция  -->
+<<<<<<< HEAD
             <TabsComponent/>
+=======
+            <div class="opportunities_box opportunities_box--2">
+                <h3>Лучшие<span class="violet-lite"> сервисы</span></h3>
+                <div class="items-wrap">
+                    <div class="items marquee">
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/midjourney.svg" alt="img">
+                        <span>Midjourney</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/chatGPT-dalle.svg" alt="img">
+                        <span>Dall-E</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/eleven.svg" alt="img">
+                        <span>Eleven Labs</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/luma.svg" alt="img">
+                        <span>Luma</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/runwayml.svg" alt="img">
+                        <span>Runway ML</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/stable-diffusion.svg" alt="img">
+                        <span>Stable Diffusion</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/stability.svg" alt="img">
+                        <span>Stability</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/claude-ai.svg" alt="img">
+                        <span>Claudy AI</span>
+                    </div>
+
+                    </div>
+                    <div aria-hidden="true" class="items marquee">
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/midjourney.svg" alt="img">
+                        <span>Midjourney</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/chatGPT-dalle.svg" alt="img">
+                        <span>Dall-E</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/eleven.svg" alt="img">
+                        <span>Eleven Labs</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/luma.svg" alt="img">
+                        <span>Luma</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/runwayml.svg" alt="img">
+                        <span>Runway ML</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/stable-diffusion.svg" alt="img">
+                        <span>Stable Diffusion</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/stability.svg" alt="img">
+                        <span>Stability</span>
+                    </div>
+                    <div class="item wrap-neuronet_box">
+                        <img src="../assets/img/neuronet/claude-ai.svg" alt="img">
+                        <span>Claudy AI</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="opportunities_box--2_description">
+                    <div class="wrap-neuronet_box wrap-neuronet_box--description">
+                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <span>ChatGPT</span>
+                    </div>
+                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                </div>
+            </div>
+>>>>>>> parent of 05fb21c (tabs 70% 😭)
 
             <!-- 3 секция -->
             <div class="opportunities_box opportunities_box--3">
@@ -87,7 +179,7 @@
         overflow: hidden;
         user-select: none;
         gap: 20px;
-        width: 100%;
+        width: 400px;
     }
 
     .items {
@@ -126,6 +218,15 @@
     }
     }
 
+<<<<<<< HEAD
+=======
+    .opportunities_box--2_description{
+        display: flex;
+        flex-direction: column;
+        /* align-items: ce; */
+    }
+
+>>>>>>> parent of 05fb21c (tabs 70% 😭)
     .wrap-neuronet_box--description {
         /* transform: scale(1.1); */
         padding: 0;
