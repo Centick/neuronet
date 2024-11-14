@@ -281,6 +281,8 @@ h4{
 
 .opportunities_box--2{
     grid-area: 7 / 1 / 11 / 6;
+
+
     display: flex;
     align-items: center;
     gap: 20px;
