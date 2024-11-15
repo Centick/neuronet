@@ -1,24 +1,25 @@
-<template v-if="True">
+<template>
     <div class="section section__chat-bot">
         
         <div class="container container__chat-bot">
             <h4>Чат-бот</h4>
-            <div class="chat-bot_btn-close"></div>
+            <div class="chat-bot_btn-close" @click="emit('closeChatBot')"></div>
             <div class="chating">
                 <form class="chating__form" action="#">
                     <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
                     <textarea class="chating__input" placeholder="Введите ваш запрос..."></textarea>
                     <input class="btn chating__input--btn" type="button" value="→">
                 </form>
-                
+
             </div>
 
         </div>
     </div>
 </template>
 
-<script>
-
+<script setup lang="ts">
+    import { ref } from 'vue';
+    const emit = defineEmits(['closeChatBot']);
 </script>
 
 <style>

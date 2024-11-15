@@ -12,17 +12,16 @@
                     <a class="link" href="#">Цены</a>
                     <a class="link" href="#">FAQ</a>
                 </nav>
-                <div class="btn">Попробовать</div>
+                <div class="btn" @click="emit('openChatBot')">Попробовать</div>
             </div>
         </div>
     </header>
 </template>
 
-<script setup lang="ts">
-    
-    // import {Ref, ref} from "vue";
+<script setup lang="ts">    
+    import { defineEmits } from 'vue';
 
-
+    const emit = defineEmits(['openChatBot']);
 </script>
 
 <style scoped>
