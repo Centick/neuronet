@@ -51,6 +51,10 @@
     <div class="section">
         <div class="container using__container">
             <QweComponent/>
+<<<<<<< HEAD
+=======
+            <img class="using__img" src="../assets/img/soundLine.gif" alt="img">
+>>>>>>> parent of 05fb21c (tabs 70% 😭)
         </div>
     </div>
 </template>

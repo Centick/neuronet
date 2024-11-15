@@ -218,17 +218,11 @@
     }
     }
 
-<<<<<<< HEAD
-=======
     .opportunities_box--2_description{
         display: flex;
         flex-direction: column;
-        /* align-items: ce; */
     }
-
->>>>>>> parent of 05fb21c (tabs 70% 😭)
     .wrap-neuronet_box--description {
-        /* transform: scale(1.1); */
         padding: 0;
         margin-bottom: 10px;
     }
