@@ -31,9 +31,6 @@
             </div>
 
             <!-- 2 секция  -->
-<<<<<<< HEAD
-            <TabsComponent/>
-=======
             <div class="opportunities_box opportunities_box--2">
                 <h3>Лучшие<span class="violet-lite"> сервисы</span></h3>
                 <div class="items-wrap">
@@ -117,13 +114,12 @@
                 </div>
                 <div class="opportunities_box--2_description">
                     <div class="wrap-neuronet_box wrap-neuronet_box--description">
-                        <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
-                        <span>ChatGPT</span>
+                        <img src="../assets/img/neuronet/midjourney.svg" alt="img">
+                        <span>Midjourney</span>
                     </div>
-                    <p><span class="violet">ChatGPT</span>  - нейросеть для ответа на любые вопросы. Быстро, коротко м информативно. </p>
+                    <p><span class="gadient-pink">Midjourney</span>  - нейросеть для создание любых картинок. Подробно опишите ваше изображение и получите ответ. </p>
                 </div>
             </div>
->>>>>>> parent of 05fb21c (tabs 70% 😭)
 
             <!-- 3 секция -->
             <div class="opportunities_box opportunities_box--3">

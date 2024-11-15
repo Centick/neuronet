@@ -42,12 +42,16 @@
     --colorVioletDarck: #5140b1;
     --colorBlack: rgb(16, 16, 16);
     --colorForBox: #191919;
+    --colorVioletLightGradientLeftRight: linear-gradient(145deg, #ffa7a7, #a30cb5, #00173a);
+    --colorPinkGradientTopBottom: linear-gradient(0deg, #f99ca8, #e276ab 56.52%, #c94daf);
     --colorVioletGradientLeftRight: linear-gradient(90deg, rgba(178,129,254, 1) 0%, rgba(113,93,226,1) 100%);
-    
+    --colorVioletGradientRightLeft: linear-gradient(90deg, #6f5bf0 0%, rgba(178,129,254, 1) 100%);
     --colorVioletGradientTopBottom: linear-gradient(180deg, rgba(25,25,25,1) 40%, rgba(81,64,177, 0.3) 100%);
+    --colorBlueGradientLeftRight: linear-gradient(125deg, #fff -2.09%, #62a4f1 19.09%, #7f4bee 59.1%, #fff 89.18%, #157ffb 114.49%);
 
     /* Fonts */
     --sizeLink: 18px;
+    color: gre;
     /* Borders */
     --borderRadiusMain: 14px;
     /* Shadows */
@@ -99,6 +103,25 @@ body{
     margin-top: 10px;
 }
 
+.gadient-pink{
+    background-image: var(--colorPinkGradientTopBottom);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-violet{
+    background-image: var(--colorVioletLightGradientLeftRight);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-blue{
+    background-image: var(--colorBlueGradientLeftRight);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 p{
     font-size: 20px;
 }
@@ -120,11 +143,16 @@ h3{
     font-size: 30px;
 }
 
+h4{
+    font-size: 40px;
+}
+
 .btn{
     padding: 10px 20px;
     border-radius: 50px;
     border: 2px solid var(--colorViolet);
     cursor: pointer;
+    width: fit-content;
 }
 
 .btn:hover{
@@ -232,7 +260,7 @@ h3{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(16, minmax(0, 6.25rem));
-    grid-template-rows: repeat(17, minmax(0, 4rem));
+    grid-template-rows: repeat(16, minmax(0, 4rem));
 }
 
 .opportunities_box{
@@ -447,9 +475,131 @@ h3{
 
 /* using */
 .using__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 15%;
+    justify-items: end;
+}
+
+.using__wrap{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    gap: 40px;
+}
+
+.using__wrap_btn{
+    padding: 14px 100px;
+    /* padding-left: 140px; */
+    font-size: 22px;
+    border: 1px solid var(--colorVioletDarck);
+    transition: all .6s linear;
     position: relative;
+}
+
+.using__wrap_btn::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 56px;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-image: url('../img/neuronet/chatGPT-3_5.svg');
+}
+
+.using__wrap_btn:hover{
+    background: var(--colorVioletGradientRightLeft);
+}
+
+.using__img{
+    mix-blend-mode: lighten;
+    width: 350px;
+    pointer-events: none;
+}
+
+/* WWimage */
+.WWimage__container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 20%;
+}
+
+.WWimage__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.WWimage__box_text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.WWimage__box_text--reverse{
+    align-items: flex-end
+}
+
+.WWimage__box_text--reverse h4{
+    text-align: end;
+}
+
+.WWimage__link{
+    color: #7b7b7b;
+    width: fit-content;
+    font-weight: 700;
+}
+
+.WWimage_image{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--colorViolet);
+    pointer-events: none;
+}
+
+/* footer */
+.footer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__container p{
+    max-width: 800px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.footer__container > span{
+    color: #7b7b7b;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer__img{
+    mix-blend-mode: lighten;
+    max-width: 600px;
+    pointer-events: none;
+    position: relative;
+}
+
+.footer__img::after{
+    content: '';
+    position: absolute;
+    background-color: red;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }

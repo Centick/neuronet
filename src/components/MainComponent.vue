@@ -6,42 +6,7 @@
             <h1><span class="violet">Нейросети</span> – ключ к умным решениям.</h1>
             <span class="banner_text">Используй мощь всех передовых нейросетей</span>
             <div class="banner__wrap-neuronet">
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
-                    <span>ChatGPT</span>
-                </div>
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/midjourney.svg" alt="img">
-                    <span>Midjourney</span>
-                </div>
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/chatGPT-dalle.svg" alt="img">
-                    <span>Dall-E</span>
-                </div>
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/eleven.svg" alt="img">
-                    <span>Eleven Labs</span>
-                </div>
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/luma.svg" alt="img">
-                    <span>Luma</span>
-                </div>
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/runwayml.svg" alt="img">
-                    <span>Runway ML</span>
-                </div>
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/stable-diffusion.svg" alt="img">
-                    <span>Stable Diffusion</span>
-                </div>
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/stability.svg" alt="img">
-                    <span>Stability</span>
-                </div>
-                <div class="wrap-neuronet_box">
-                    <img src="../assets/img/neuronet/claude-ai.svg" alt="img">
-                    <span>Claudy AI</span>
-                </div>
+                <ButtonListComponent/>
             </div>
         </div>
     </div>
@@ -50,11 +15,66 @@
 
     <div class="section">
         <div class="container using__container">
-            <QweComponent/>
-<<<<<<< HEAD
-=======
+            <div class="using__wrap">
+                <QweComponent/>
+                <div class="btn using__wrap_btn" type="button">Попробовать пямо сейчас</div>
+            </div>
             <img class="using__img" src="../assets/img/soundLine.gif" alt="img">
->>>>>>> parent of 05fb21c (tabs 70% 😭)
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container WWimage__container">
+            <div class="WWimage__box">
+                <div class="WWimage__box_text">
+                    <h4><span class="gadient-pink">Генерируйте</span> копии вашего изображения</h4>
+                    <a class="link WWimage__link" href="#">В Reimagine XL</a>
+                </div>
+                <img class="WWimage_image" src="../assets/img/work_with_image/reimagine.gif">
+            </div>
+            <div class="WWimage__box">
+                <img class="WWimage_image" src="../assets/img/work_with_image/Remove_background.gif">
+                <div class="WWimage__box_text WWimage__box_text--reverse">
+                    <h4><span class="gradient-violet"> Удаляйте фон </span>с ваших фото</h4>
+                    <a class="link WWimage__link" href="#">В Remove Background</a>
+                </div>
+            </div>
+            <div class="WWimage__box">
+                <div class="WWimage__box_text">
+                    <h4><span class="gradient-violet">Дорисовывайте </span>ваши изображения</h4>
+                    <a class="link WWimage__link" href="#">В Uncrop</a>
+                </div>
+                <img class="WWimage_image" src="../assets/img/work_with_image/Uncrop.gif">
+            </div>
+            <div class="WWimage__box">
+                <img class="WWimage_image" src="../assets/img/work_with_image/image-to-video.gif">
+                <div class="WWimage__box_text WWimage__box_text--reverse">
+                    <h4><span class="gradient-blue">Превращайте</span> ваши фото в короткие видео</h4>
+                    <a class="link WWimage__link" href="#">В Image-to-Video</a>
+                </div>
+            </div>
+            <div class="WWimage__box">
+                <div class="WWimage__box_text">
+                    <h4><span class="gradient-blue">Улучшайте</span> качество ваших фотографий</h4>
+                    <a class="link WWimage__link" href="#">В Upscale</a>
+                </div>
+                <img class="WWimage_image" src="../assets/img/work_with_image/UpScale.gif">
+            </div>
+            <div class="WWimage__box">
+                <img class="WWimage_image" src="../assets/img/work_with_image/CleanUp.gif">
+                <div class="WWimage__box_text WWimage__box_text--reverse">
+                    <h4><span class="gadient-pink">Удаляйте</span> любые объекты с фото</h4>
+                    <a class="link WWimage__link" href="#">В CleanUP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container footer__container">
+            <img class="footer__img" src="../assets/img/window.webp" alt="img">
+            <p><span class="gradient-blue">Нейронные сети - это</span> как дети. Они быстро учатся, но нуждаются в <span class="gadient-pink">правильном воспитании. </span></p>
+            <span><span class="violet">© </span>Ян Лекун, иследователь ИИ</span>
         </div>
     </div>
 </template>
@@ -62,6 +82,7 @@
 <script setup lang="ts">
     import QweComponent from '@/components/QweComponent.vue' 
     import AboutNeuronetComponent from '@/components/AboutNeuronetComponent.vue';
+    import ButtonListComponent from '@/components/ButtonListComponent.vue'
     // доделать paralax эфект в баннер
 
     
