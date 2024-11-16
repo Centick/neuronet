@@ -19,7 +19,7 @@
                 <QweComponent/>
                 <div class="btn using__wrap_btn" type="button">Попробовать пямо сейчас</div>
             </div>
-            <img class="using__img" src="../assets/img/soundLine.gif" alt="img">
+            <img class="using__img" src="../assets/img/soundLine2.gif" alt="img">
         </div>
     </div>
 
