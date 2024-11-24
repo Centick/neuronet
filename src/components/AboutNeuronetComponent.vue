@@ -175,7 +175,7 @@
         overflow: hidden;
         user-select: none;
         gap: 20px;
-        width: 400px;
+        width: 100%;
     }
 
     .items {

@@ -496,8 +496,8 @@ h4{
     /* padding-left: 140px; */
     font-size: 22px;
     border: 1px solid var(--colorVioletDarck);
-    transition: all .6s linear;
     position: relative;
+    overflow: hidden;
 }
 
 .using__wrap_btn::after{
@@ -512,8 +512,21 @@ h4{
     background-image: url('../img/neuronet/chatGPT-3_5.svg');
 }
 
-.using__wrap_btn:hover{
+.using__wrap_btn::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background: var(--colorVioletGradientRightLeft);
+    z-index: -1;
+    border-radius: 50px;
+    transition: .7s ease-in-out;
+}
+
+.using__wrap_btn:hover::before{
+    width: 100%;
 }
 
 .using__img{
