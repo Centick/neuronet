@@ -2,7 +2,7 @@
     <div class="section section__chat-bot">
         
         <div class="container container__chat-bot">
-            <h4>Чат-бот</h4>
+            <h4 class="chat-bot_h4">Чат-бот GPT4</h4>
             <div class="chat-bot_btn-close" @click="emit('closeChatBot')"></div>
             <div class="chating">
                 <form class="chating__form" action="#">
@@ -48,6 +48,13 @@
 </script>
 
 <style>
+    .chat-bot_h4{
+        background-image: var(--colorBlueGradientLeftRight);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
     .section__chat-bot{
         position: fixed;
         top: 0;

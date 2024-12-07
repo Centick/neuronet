@@ -148,6 +148,13 @@
             <!-- 6 секция -->
             <div class="opportunities_box opportunities_box--6">
                 <h3><span class="violet-lite">Генерация аудио</span> из текста</h3>
+                <div>
+                    <div id="playButton" class="sound_btn">
+                        <img src="../assets/img/icons/sound.png" alt="sound">
+                    </div>
+                    <audio id="audio" src="../assets/audio/AI.mp3"></audio>
+                </div>
+                <p>Создавайте сюжеты, улучшайте качество звука, используйте профессиональную озвучку и пмного другое в месте с AI...</p>
             </div>
 
             <!-- 7 секция -->
@@ -160,7 +167,7 @@
 </template>
 
 <script  lang="ts">
-    import QweComponent from '@/components/QweComponent.vue' 
+    
 </script>
 
 <style>
@@ -221,5 +228,28 @@
     .wrap-neuronet_box--description {
         padding: 0;
         margin-bottom: 10px;
+    }
+
+    .opportunities_box--6 > div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sound_btn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.315);
+        z-index: 8;
+        cursor: pointer;
+    }
+
+    .sound_btn > img{
+        widows: 60%;
+        height: 60%;
     }
 </style>

@@ -4,6 +4,7 @@ import { createApp } from 'vue'
 
 // плавные анимации
 import App from './App.vue'
+import PrimeVue from 'primevue/config';
 import 'aos/dist/aos.css'
 
 
@@ -12,6 +13,7 @@ import { ImportsNotUsedAsValues } from 'typescript'
 // import router from './router'
 
 const app = createApp(App)
+app.use(PrimeVue);
 
 // инициализация анимациий
 // AOS.init();

@@ -11,9 +11,11 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "@primevue/themes": "^4.2.4",
     "aos": "^2.3.4",
     "autosize": "^6.0.1",
     "pinia": "^2.2.6",
+    "primevue": "^4.2.4",
     "vue": "^3.5.12",
     "vue-marquee-text-component": "^2.0.1",
     "vue-router": "^4.4.5"

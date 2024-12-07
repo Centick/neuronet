@@ -70,6 +70,8 @@
         </div>
     </div>
 
+    <FAQComponent/>
+
     <div class="section">
         <div class="container footer__container">
             <img class="footer__img" src="../assets/img/window.webp" alt="img">
@@ -83,6 +85,7 @@
     import QweComponent from '@/components/QweComponent.vue' 
     import AboutNeuronetComponent from '@/components/AboutNeuronetComponent.vue';
     import ButtonListComponent from '@/components/ButtonListComponent.vue'
+    import FAQComponent from '@/components/FAQComponent.vue';
     // доделать paralax эфект в баннер
 
     
