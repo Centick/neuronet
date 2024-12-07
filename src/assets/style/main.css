@@ -284,11 +284,9 @@ h4{
 
 .opportunities_box--2{
     grid-area: 7 / 1 / 11 / 6;
-
-
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
 }
 
 .opportunities_box--3{
@@ -350,7 +348,6 @@ h4{
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    pointer-events: none;
     position: relative;
     display: flex;
     flex-direction: column;
