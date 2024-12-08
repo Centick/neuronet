@@ -23,7 +23,10 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section section__container">
+        <div id="cpt_on_bg" class="cpt_on_bg--1 cpt_on_bg"></div>
+        <div id="cpt_on_bg" class="cpt_on_bg--2 cpt_on_bg"></div>
+        <div id="cpt_on_bg" class="cpt_on_bg--3 cpt_on_bg"></div>
         <div class="container WWimage__container">
             <div class="WWimage__box">
                 <div class="WWimage__box_text">
@@ -89,8 +92,51 @@
     // доделать paralax эфект в баннер
 
     
+    // parallax WWimage
+
+
 </script>
 
-<style lang="scss" scoped>
-    
+<style lang="css" scoped>
+    .section__container{
+        position: relative;
+    }
+    .cpt_on_bg--1{
+        position: absolute;
+        transform: rotate(1000px);
+        left: -250px;
+        width: 60vw;
+        height: 60vw;
+        background-image: url("../assets/img/parallax/parallax1.webp");
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        mix-blend-mode: lighten;
+    }
+
+    .cpt_on_bg--2{
+        position: absolute;
+        right: -250px;
+        top: 600px;
+        width: 60vw;
+        height: 60vw;
+        background-image: url("../assets/img/parallax/parallax2.webp");
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        mix-blend-mode: lighten;
+    }
+
+    .cpt_on_bg--3{
+        position: absolute;
+        top: 1400px;
+        left: -250px;
+        width: 60vw;
+        height: 60vw;
+        background-image: url("../assets/img/parallax/parallax2.webp");
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        mix-blend-mode: lighten;
+    }
 </style>

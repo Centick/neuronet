@@ -22,7 +22,7 @@
                         <!-- бот -->
                         <div class="chatting__text">
                             <img class="chatting__text--img" src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
-                            <p class="chatting__text--text">...</p>
+                            <p class="chatting__text--text"><img src="../assets/img/icons/points.gif" alt="points"></p>
                         </div>
 
                         <span class="start_chatting" :class="{'start_chatting--none': arrChatting}">Этот чат пуст...</span>
@@ -83,12 +83,19 @@ import { couldStartTrivia } from 'typescript';
 
 <style>
     .chatting_wrap{
-        /* max-height: 60%; */
-        overflow-y: hidden;
-        /* height: fit-content; */
+        overflow-y: scroll;
         flex-direction: column;
         justify-content: flex-end;
         gap: 20px;
+    }
+
+    .chatting_wrap::-webkit-scrollbar {
+        width: 6px; /* Ширина всего элемента навигации */
+    }
+
+    .chatting_wrap::-webkit-scrollbar-thumb {
+        background-color: rgb(75, 75, 75);
+        border-radius: 50px;
     }
 
     .start_chatting{
@@ -130,6 +137,8 @@ import { couldStartTrivia } from 'typescript';
         border: 1px solid var(--colorVioletDarck);
         border-radius: 20px;
         padding: 30px;
+        justify-content: space-between;
+
     }
 
     .chat-bot_btn-close{
@@ -147,7 +156,7 @@ import { couldStartTrivia } from 'typescript';
     .chating{
         display: flex;
         flex-direction: column-reverse;
-        height: 100%;
+        height: 90%;
         gap: 30px;
     }
 
@@ -196,6 +205,7 @@ import { couldStartTrivia } from 'typescript';
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin-right: 10px;
     }
 
     .chatting__text{
@@ -220,6 +230,15 @@ import { couldStartTrivia } from 'typescript';
         padding: 10px;
         background-color: rgba(83, 83, 83, 0.4);
         border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .chatting__text--text > img{
+        width: 40px;
+        height: 100%;
+        mix-blend-mode: multiply;
     }
 
     .chatting__text_user--text{
