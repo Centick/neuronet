@@ -11,6 +11,13 @@
                     <input class="btn chating__input--btn" type="button" @click="addMessage" value="→">
                 </form>
                 <div class="chatting_wrap">
+                    <div class="chatting__text">
+                        <img class="chatting__text--img" src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                        <p class="chatting__text--text">Привет! Я - ChatGPT! Задавай мне любой вопрос, и я отвечу на него!</p>
+                    </div>
+
+                    <div class="line">Новые сообщения</div>
+                    
                     <div class="chatting" v-for="message in arrChatting" :key="message.id">
                         <!--chatting  -->
                         <!-- пользователь -->
@@ -243,5 +250,12 @@ import { couldStartTrivia } from 'typescript';
 
     .chatting__text_user--text{
         background-color: var(--colorViolet);
+    }
+
+    .line{
+        height: 1px;
+        background-color: rgb(60, 60, 60);
+        width: 100%;
+        margin: 20px 0;
     }
 </style>

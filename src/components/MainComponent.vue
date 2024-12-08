@@ -8,6 +8,18 @@
             <div class="banner__wrap-neuronet">
                 <ButtonListComponent/>
             </div>
+            <div class="number_wrap">
+                <div class="number_block">
+                    <span>99.8k+</span>
+                    <span>Пользователей</span>
+                </div>
+                <div class="number_block">
+                    <span>50k+</span>
+                    <span>Запросов</span>
+                </div>
+
+                <div class="number_block"></div>
+            </div>
         </div>
     </div>
 
@@ -138,5 +150,29 @@
         background-size: cover;
         z-index: -1;
         mix-blend-mode: lighten;
+    }
+
+    .number_wrap{
+        margin-top: 30px;
+        font-size: 50px;
+        display: flex;
+        gap: 50px;
+    }
+
+    .number_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .number_block > span{
+        font-weight: 700;
+
+    }
+
+    .number_block > span:last-child{
+        font-size: 20px;
+        color: gray;
+        font-weight: 500;
     }
 </style>
