@@ -4,3 +4,4 @@ export type Servis = {
     icon: string;
     description: string;
 };
+

@@ -8,23 +8,24 @@
                 <form class="chating__form" action="#">
                     <img src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
                     <textarea class="chating__input" placeholder="Введите ваш запрос..." ref="textarea" v-model="text"></textarea>
-                    <input class="btn chating__input--btn" type="button" value="→">
+                    <input class="btn chating__input--btn" type="button" @click="addMessage" value="→">
                 </form>
-                <div class="chatting">
-                    <!--  -->
-                    <div class="chatting__text chatting__text_user">
-                        <img class="chatting__text--img" src="../assets/img/icons/profile.png" alt="img">
-                        <p class="chatting__text--text chatting__text_user--text">Привет, как твои дела?</p>
-                    </div>
+                <div class="chatting_wrap">
+                    <div class="chatting" v-for="message in arrChatting" :key="message.id">
+                        <!--chatting  -->
+                        <!-- пользователь -->
+                        <div class="chatting__text chatting__text_user">
+                            <img class="chatting__text--img" src="../assets/img/icons/profile.png" alt="img">
+                            <p class="chatting__text--text chatting__text_user--text">{{ message.text }}</p>
+                        </div>
 
-                    <div class="chatting__text">
-                        <img class="chatting__text--img" src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
-                        <p class="chatting__text--text">Добрый вечер, все отлично!</p>
-                    </div>
+                        <!-- бот -->
+                        <div class="chatting__text">
+                            <img class="chatting__text--img" src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
+                            <p class="chatting__text--text">...</p>
+                        </div>
 
-                    <div class="chatting__text">
-                        <img class="chatting__text--img" src="../assets/img/neuronet/chatGPT-3_5.svg" alt="img">
-                        <p class="chatting__text--text">Сегодня 05.12.2024г погода прохладная ожидаются осадки в виде снега с дождем. Бери</p>
+                        <span class="start_chatting" :class="{'start_chatting--none': arrChatting}">Этот чат пуст...</span>
                     </div>
                 </div>
             </div>            
@@ -34,20 +35,72 @@
 </template>
 
 <script setup lang="ts">
-    import { ref, onMounted  } from 'vue';
+    import { ref, onMounted, reactive  } from 'vue';
     import autosize from 'autosize';
+import { json } from 'stream/consumers';
+import { couldStartTrivia } from 'typescript';
     // эмиты
     const emit = defineEmits(['closeChatBot']);
 
+    // textarea
     const text = ref('');
     const textarea = ref(null);
 
     onMounted(() => {
         autosize(textarea.value);
     });
+
+    // chatting
+    // массив с реактивными сообщениями
+    // localStorage.setItem('user_chating_gpt', '{}');
+    let idMassage = 0
+    let arrChatting = reactive(JSON.parse(localStorage.getItem('user_chating_gpt')));
+
+    const addMessage = () => {
+        if (text.value.trim() != ''){
+            let objectMessage = { 
+                id: idMassage++,
+                text: text.value,
+                author: 'user'
+            };
+            if (localStorage.getItem('user_chating_gpt') != null){
+                let arrChatting = localStorage.getItem('user_chating_gpt');   
+                arrChatting = JSON.parse(arrChatting);
+                arrChatting.push(objectMessage);
+                localStorage.setItem('user_chating_gpt', JSON.stringify(arrChatting));
+                // console.log()
+            }
+            else{
+                let mass_dop = [];
+                mass_dop.push(objectMessage);
+                localStorage.setItem('user_chating_gpt', JSON.stringify(mass_dop));
+            }
+            text.value = ''
+        }
+        arrChatting = JSON.parse(localStorage.getItem('user_chating_gpt'));
+    }
 </script>
 
 <style>
+    .chatting_wrap{
+        /* max-height: 60%; */
+        overflow-y: hidden;
+        /* height: fit-content; */
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .start_chatting{
+        font-size: 25px;
+        text-align: center;
+        color: grey;
+    }
+
+    .start_chatting--none{
+        display: none;
+    }
+
     .chat-bot_h4{
         background-image: var(--colorBlueGradientLeftRight);
         background-clip: text;
@@ -71,7 +124,6 @@
     .container__chat-bot{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         position: relative;
         width: 40%;
         background-color: var(--colorForBox);
@@ -106,7 +158,7 @@
         border: 1px solid var(--colorViolet);
         padding: 15px;
         border-radius: 12px;
-        position: relative
+        /* position: relative */
     }
 
     .chating__input{
